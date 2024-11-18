@@ -1667,3 +1667,231 @@ Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\toty\settings.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\toty\settings.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\toty\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py", line 59, in home
+    return render(request, 'portfolio/home.html', {'testimonials': testimonials})
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: portfolio/home.html
+Not Found: /favicon.ico
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py", line 59, in home
+    return render(request, 'pages/home.html', {'testimonials': testimonials})
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: pages/home.html
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+tag: Software (305) - type: string (2) Tag Location: 22 - Data Location: 26 - value: b'Google\x00'
+Importing BlpImagePlugin
+Importing BmpImagePlugin
+Importing BufrStubImagePlugin
+Importing CurImagePlugin
+Importing DcxImagePlugin
+Importing DdsImagePlugin
+Importing EpsImagePlugin
+Importing FitsImagePlugin
+Importing FliImagePlugin
+Importing FpxImagePlugin
+Image: failed to import FpxImagePlugin: No module named 'olefile'
+Importing FtexImagePlugin
+Importing GbrImagePlugin
+Importing GifImagePlugin
+Importing GribStubImagePlugin
+Importing Hdf5StubImagePlugin
+Importing IcnsImagePlugin
+Importing IcoImagePlugin
+Importing ImImagePlugin
+Importing ImtImagePlugin
+Importing IptcImagePlugin
+Importing JpegImagePlugin
+Importing Jpeg2KImagePlugin
+Importing McIdasImagePlugin
+Importing MicImagePlugin
+Image: failed to import MicImagePlugin: No module named 'olefile'
+Importing MpegImagePlugin
+Importing MpoImagePlugin
+Importing MspImagePlugin
+Importing PalmImagePlugin
+Importing PcdImagePlugin
+Importing PcxImagePlugin
+Importing PdfImagePlugin
+Importing PixarImagePlugin
+Importing PngImagePlugin
+Importing PpmImagePlugin
+Importing PsdImagePlugin
+Importing QoiImagePlugin
+Importing SgiImagePlugin
+Importing SpiderImagePlugin
+Importing SunImagePlugin
+Importing TgaImagePlugin
+Importing TiffImagePlugin
+Importing WebPImagePlugin
+Importing WmfImagePlugin
+Importing XbmImagePlugin
+Importing XpmImagePlugin
+Importing XVThumbImagePlugin
+Not Found: /media/testimonials/unnamed.jpg
+tag: Software (305) - type: string (2) Tag Location: 22 - Data Location: 26 - value: b'Google\x00'
+tag: Software (305) - type: string (2) Tag Location: 22 - Data Location: 26 - value: b'Google\x00'
+tag: Software (305) - type: string (2) Tag Location: 22 - Data Location: 26 - value: b'Google\x00'
+Not Found: /media/testimonials/unnamed_h7h5TkB.jpg
+Not Found: /media/testimonials/unnamed_UTeaoV9.jpg
+Not Found: /media/testimonials/unnamed_AiUV8c7.jpg
+Not Found: /media/testimonials/unnamed.jpg
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\toty\urls.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\toty\urls.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\toty\urls.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\toty\urls.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\toty\urls.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\models.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py", line 72, in home
+    return render(request, 'portfolio/home.html', context)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: portfolio/home.html
+Not Found: /favicon.ico
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py", line 72, in home
+    return render(request, 'pages/home.html', context)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: pages/home.html
+Internal Server Error: /
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py", line 72, in home
+    return render(request, 'pages/index.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: pages/home.html
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+STREAM b'IHDR' 16 13
+STREAM b'sRGB' 41 1
+STREAM b'gAMA' 54 4
+STREAM b'pHYs' 70 9
+STREAM b'IDAT' 91 65445
+Importing BlpImagePlugin
+Importing BmpImagePlugin
+Importing BufrStubImagePlugin
+Importing CurImagePlugin
+Importing DcxImagePlugin
+Importing DdsImagePlugin
+Importing EpsImagePlugin
+Importing FitsImagePlugin
+Importing FliImagePlugin
+Importing FpxImagePlugin
+Image: failed to import FpxImagePlugin: No module named 'olefile'
+Importing FtexImagePlugin
+Importing GbrImagePlugin
+Importing GifImagePlugin
+Importing GribStubImagePlugin
+Importing Hdf5StubImagePlugin
+Importing IcnsImagePlugin
+Importing IcoImagePlugin
+Importing ImImagePlugin
+Importing ImtImagePlugin
+Importing IptcImagePlugin
+Importing JpegImagePlugin
+Importing Jpeg2KImagePlugin
+Importing McIdasImagePlugin
+Importing MicImagePlugin
+Image: failed to import MicImagePlugin: No module named 'olefile'
+Importing MpegImagePlugin
+Importing MpoImagePlugin
+Importing MspImagePlugin
+Importing PalmImagePlugin
+Importing PcdImagePlugin
+Importing PcxImagePlugin
+Importing PdfImagePlugin
+Importing PixarImagePlugin
+Importing PngImagePlugin
+Importing PpmImagePlugin
+Importing PsdImagePlugin
+Importing QoiImagePlugin
+Importing SgiImagePlugin
+Importing SpiderImagePlugin
+Importing SunImagePlugin
+Importing TgaImagePlugin
+Importing TiffImagePlugin
+Importing WebPImagePlugin
+Importing WmfImagePlugin
+Importing XbmImagePlugin
+Importing XpmImagePlugin
+Importing XVThumbImagePlugin
+STREAM b'IHDR' 16 13
+STREAM b'sRGB' 41 1
+STREAM b'gAMA' 54 4
+STREAM b'pHYs' 70 9
+STREAM b'IDAT' 91 65445

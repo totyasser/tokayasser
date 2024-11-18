@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30vh; /* Full viewport height */
+    height: 55vh; /* Full viewport height */
     text-align: center; /* Center align text */
     background-color: var(--white); /* Optional: Add a background color */
 }
@@ -30,11 +30,37 @@
     color: #555; /* Subtle text color */
 }
 
+/* About Section */
+#about {
+    padding: 60px 20px;
+    color: #fff; /* Ensure text contrasts with the background */
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    margin: auto;
+    background: linear-gradient(to bottom, #f0f8ff, #add8e6); /* Replace with image dominant color */
+    border-radius: 10px; /* Optional: rounded corners */
+    overflow: hidden; /* Ensures the image fits within the shape */
+}
+
 .about-image img {
     width: 100%;
-    max-width: 400px; /* Restrict the size of the image */
-    border-radius: 10px; /* Optional: Add rounded corners to the image */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for a polished look */
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the div */
+    mix-blend-mode: multiply; /* Blends the image with the background */
+    opacity: 0.9; /* Optional: Slight transparency for blending */
 }
 
 /* Responsive Design */
@@ -93,16 +119,41 @@
     background: var(--white);
     padding: 15px 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent; /* Transparent border for gradient effect */
+    background-clip: padding-box; /* Ensures gradient doesn't overlap content */
+    position: relative;
+}
+
+.timeline-content::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    border-radius: 10px; /* Matches the card's border-radius */
+    background: linear-gradient(
+        45deg,
+        var(--pink),
+        var(--mint-green),
+        var(--blue)
+    ); /* Gradient border */
 }
 
 .timeline-content:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transform: translateX(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
+.timeline-content:hover::before {
+    filter: brightness(1.1); /* Slightly brighten gradient on hover */
+}
+
+/* Other Timeline Styles */
 .timeline-content h3 {
     margin-bottom: 5px;
     color: var(--blue);
@@ -289,19 +340,16 @@
     }
 }
 
-
 .hero {
-    background: url("{% static 'images/grass-texture.jpg' %}") no-repeat center center;
-    background-size: cover;
+    background: linear-gradient(to bottom, #4caf50, #81c784); /* Gradient colors */
     position: relative; /* To position butterflies absolutely within */
     height: 100vh; /* Adjust as needed */
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden; /* Hide overflow from butterfly animations */
+    background-size: cover; /* Ensures the gradient covers the entire section */
 }
-
-/* static/css/styles.css */
 
 /* Common butterfly styles */
 .butterfly {
@@ -393,5 +441,125 @@
 @media (min-width: 1201px) {
     .butterfly {
         width: 50px;
+    }
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #f5f5f5, #e8f6f3); /* Background gradient */
+}
+
+.testimonials .container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--blue);
+    position: relative;
+    display: inline-block;
+}
+
+.testimonials h2::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: var(--mint-green);
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+}
+
+.testimonials-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.testimonial-card {
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0); /* Light gradient background for card */
+    padding: 20px;
+    border-radius: 20px; /* Softer corners */
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid; /* Border for colorful gradient */
+    border-image: linear-gradient(45deg, #0066ff, #00ff2a, #ff00bf) 1;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 10px;
+    border: 3px solid var(--mint-green);
+}
+
+.testimonial-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: var(--blue);
+    font-weight: bold;
+}
+
+.testimonial-stars {
+    color: #FFD700; /* Gold color for stars */
+    margin-bottom: 10px;
+}
+
+.testimonial-stars i {
+    margin-right: 2px;
+}
+
+.testimonial-card p {
+    font-size: 1rem;
+    color: #555555;
+    font-style: italic; /* Adds emphasis to the quote */
+    line-height: 1.6;
+    position: relative;
+    margin-top: 10px;
+}
+
+.testimonial-card p::before {
+    content: "“"; /* Opening quote */
+    font-size: 2rem;
+    color: var(--mint-green);
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+.testimonial-card p::after {
+    content: "”"; /* Closing quote */
+    font-size: 2rem;
+    color: var(--mint-green);
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .testimonials-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-card {
+        width: 90%;
     }
 }

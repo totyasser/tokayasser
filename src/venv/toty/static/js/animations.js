@@ -1,36 +1,26 @@
 // static/js/animations.js
 
 document.addEventListener('DOMContentLoaded', () => {
-    gsap.to('.butterfly1', {
-        x: '120vw',
-        y: '-20vh',
-        rotation: 45,
-        opacity: 0,
-        duration: 15,
-        repeat: -1,
-        delay: 0,
-        ease: 'linear'
-    });
+    // Butterfly animation settings
+    const butterflies = document.querySelectorAll('.butterfly');
+    const directions = ['120vw', '-120vw']; // Possible horizontal directions
 
-    gsap.to('.butterfly2', {
-        x: '-120vw',
-        y: '20vh',
-        rotation: -45,
-        opacity: 0,
-        duration: 20,
-        repeat: -1,
-        delay: 5,
-        ease: 'linear'
-    });
+    butterflies.forEach((butterfly, index) => {
+        const randomDirection = directions[Math.floor(Math.random() * directions.length)]; // Random direction
+        const randomDuration = Math.random() * 10 + 10; // Duration between 10s and 20s
+        const randomDelay = Math.random() * 5; // Delay between 0s and 5s
+        const randomRotation = Math.random() * 90 - 45; // Rotation between -45deg and 45deg
+        const randomYOffset = Math.random() * 40 - 20; // Random vertical offset (-20vh to 20vh)
 
-    gsap.to('.butterfly3', {
-        x: '120vw',
-        y: '-20vh',
-        rotation: 45,
-        opacity: 0,
-        duration: 18,
-        repeat: -1,
-        delay: 10,
-        ease: 'linear'
+        gsap.to(butterfly, {
+            x: randomDirection,
+            y: `${randomYOffset}vh`,
+            rotation: randomRotation,
+            opacity: 0,
+            duration: randomDuration,
+            repeat: -1,
+            delay: randomDelay,
+            ease: 'linear',
+        });
     });
 });
