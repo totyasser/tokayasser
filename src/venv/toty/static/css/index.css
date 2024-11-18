@@ -5,7 +5,7 @@
 /* About Section */
 .about {
     position: relative;
-    padding: 80px 50px; /* Spacing for the section */
+    padding: 80px 20px; /* Spacing for the section */
     background: linear-gradient(135deg, #f0f8ff, #d1e8ff); /* Light 3D-like gradient */
     color: #333; /* Text color */
     overflow: hidden; /* Ensures pseudo-elements don't overflow */
