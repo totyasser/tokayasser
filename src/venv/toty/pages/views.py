@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.core.mail import EmailMessage
 from django.template.loader import render_to_string
 from django.contrib import messages
@@ -37,5 +37,8 @@ def home(request):
                 messages.error(request, 'There was an error sending your message. Please try again later.')
         else:
             messages.error(request, 'All fields are required.')
-    
+
+        # Redirect to the same page to prevent form resubmission
+        return redirect('home')  # Replace 'home' with your view name or path
+
     return render(request, 'pages/index.html')
