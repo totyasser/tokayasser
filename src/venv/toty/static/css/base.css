@@ -9,9 +9,12 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #333;
     line-height: 1.6;
+    
+    /* Firefox Scrollbar */
+    scrollbar-width: thin; /* Options: auto, thin, none */
+    scrollbar-color: var(--pink) var(--blue); /* thumb color | track color */
 }
 
-/* Color Variables */
 /* Color Variables */
 :root {
     --pink: #FFC0CB;
@@ -23,8 +26,8 @@ body {
     --light-pink: #FFB6C1; /* Optional: A lighter shade for smooth gradient */
 }
 
-/* Header */
-header {
+/* Header Styles */
+.header-custom {
     background-color: var(--white);
     padding: 20px 0;
     position: fixed;
@@ -42,30 +45,103 @@ nav {
     margin: auto;
 }
 
+/* Logo */
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--blue);
 }
 
+.logo-text {
+    color: var(--blue);
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.logo-text:hover {
+    color: var(--pink);
+}
+
+/* Navigation Links */
 .nav-links {
     list-style: none;
     display: flex;
+    gap: 20px;
 }
 
 .nav-links li {
-    margin-left: 20px;
+    font-size: 1rem;
 }
 
 .nav-links a {
     text-decoration: none;
     color: var(--blue);
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
 .nav-links a:hover {
     color: var(--pink);
+    border-bottom: 2px solid var(--pink);
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-toggle .bar {
+    background-color: var(--blue);
+    height: 3px;
+    width: 25px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: var(--white);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        border-radius: 10px;
+        width: 200px;
+        display: none;
+        animation: slideIn 0.3s ease;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Hero Section */
@@ -173,64 +249,185 @@ h2 {
     align-self: center;
 }
 
-/* Footer */
-/* footer {
-    background-color: var(--blue);
+/* Footer Styles */
+.footer-custom {
+    background: linear-gradient(90deg, var(--mint-green), var(--blue)); /* Gradient background */
     color: var(--white);
-    padding: 20px 0;
+    padding: 40px 20px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.footer-custom .container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
     text-align: center;
 }
 
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
 .social-links a {
-    margin: 0 10px;
+    color: var(--white);
+    font-size: 1.8rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--pink);
+    transform: scale(1.2);
+}
+
+.contact-info {
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+}
+
+.contact-info i {
+    font-size: 1.2rem;
+    color: var(--pink);
+    transition: transform 0.3s ease;
+}
+
+.contact-info a {
     color: var(--white);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.social-links a:hover {
+.contact-info a:hover {
     color: var(--pink);
-} */
+}
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .nav-links {
-        flex-direction: column;
-        background-color: var(--white);
-        position: absolute;
-        top: 70px;
-        right: 20px;
-        width: 150px;
-        display: none;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.contact-info i:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 10px;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Messages Container */
+.messages {
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    animation: fadeIn 0.8s ease-out; /* Fade-in animation for messages */
+}
+
+/* Base Message Style */
+.messages p {
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth interaction effects */
+}
+
+/* Success Message */
+.messages .success {
+    background: linear-gradient(to right, var(--mint-green), var(--blue));
+    color: var(--white);
+    border: none;
+    transform: translateY(0); /* Reset animation state */
+}
+
+.messages .success:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Error Message */
+.messages .error {
+    background: linear-gradient(to right, var(--pink), var(--blue));
+    color: var(--white);
+    border: none;
+    transform: translateY(0); /* Reset animation state */
+}
+
+.messages .error:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
     }
-
-    .nav-links li {
-        margin: 15px 0;
-    }
-
-    nav {
-        position: relative;
-    }
-
-    .menu-toggle {
-        display: none;
-        font-size: 1.5rem;
-        color: var(--blue);
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: block;
-        cursor: pointer;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
-/* Optional: Smooth scrolling for anchor links */
-html {
-    scroll-behavior: smooth;
+/* Custom Scrollbar for WebKit Browsers */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
 }
 
+::-webkit-scrollbar-track {
+    background: linear-gradient(180deg, var(--blue), var(--mint-green)); /* Track background gradient */
+    border-radius: 10px; /* Rounded corners for the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, var(--pink), var(--blue)); /* Thumb background gradient */
+    border-radius: 10px; /* Rounded corners for the thumb */
+    border: 3px solid var(--white); /* Space around the thumb */
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+    animation: gradientShift 5s ease infinite; /* Continuous gradient animation */
+}
+
+/* Hover Effect for Scrollbar Thumb */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, var(--mint-green), var(--pink)); /* Reverse gradient on hover */
+    transform: scale(1.1); /* Slightly enlarge the thumb on hover */
+}
+
+/* Keyframes for Gradient Animation */
+@keyframes gradientShift {
+    0% {
+        background: linear-gradient(45deg, var(--pink), var(--blue));
+    }
+    50% {
+        background: linear-gradient(45deg, var(--mint-green), var(--pink));
+    }
+    100% {
+        background: linear-gradient(45deg, var(--pink), var(--blue));
+    }
+}
+
+/* Custom Scrollbar for Firefox */
+body {
+    scrollbar-width: thin; /* Options: auto, thin, none */
+    scrollbar-color: var(--pink) var(--blue); /* thumb color | track color */
+}

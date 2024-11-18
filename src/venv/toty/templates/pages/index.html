@@ -1,8 +1,10 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}Toka Yasser Portfolio{% endblock %}
 
 {% block content %}
+
     <!-- Hero Section -->
     <section class="hero" data-aos="fade-in">
         <div class="hero-content animate__animated animate__fadeIn">
@@ -10,7 +12,13 @@
             <p>Experienced English Teacher & Instructor</p>
             <a href="#about" class="btn">Learn More</a>
         </div>
+
+        <!-- Butterfly Images -->
+        <img src="{% static 'images/butterfly1.png' %}" alt="Butterfly" class="butterfly butterfly1">
+        <img src="{% static 'images/butterfly2.png' %}" alt="Butterfly" class="butterfly butterfly2">
+        <img src="{% static 'images/butterfly3.png' %}" alt="Butterfly" class="butterfly butterfly3">
     </section>
+
 
     <!-- About Section -->
     <section id="about" class="about" data-aos="fade-up">

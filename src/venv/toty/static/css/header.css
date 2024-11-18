@@ -1,3 +1,11 @@
+/* General Styles */
+:root {
+    --pink: #FFC0CB;
+    --blue: #4A90E2;
+    --white: #FFFFFF;
+    --mint-green: #98FF98;
+}
+
 /* Header Styles */
 header {
     background-color: var(--white);
@@ -6,7 +14,7 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     animation: slideDown 0.5s ease-out forwards;
     transform: translateY(-100%);
 }
@@ -25,7 +33,47 @@ nav {
     margin: auto;
 }
 
-/* Logo with 3D Effect and Animation */
+/* Logo Styles */
+.navbar-brand img {
+    width: 120px;
+    height: 120px;
+    border-radius: 17px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Hidden Logo Name */
+.hidden {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--blue);
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    perspective: 500px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 3D Logo Text */
 .logo-text {
     font-size: 1.8rem;
     font-weight: bold;
@@ -37,8 +85,7 @@ nav {
     opacity: 0;
     transform: translateZ(-50px) rotateY(-10deg);
     transition: transform 0.6s ease, color 0.3s ease;
-    /* 3D Text Shadow for Subtle Depth */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle depth */
 }
 
 @keyframes popIn {
@@ -58,11 +105,11 @@ nav {
     list-style: none;
     display: flex;
     opacity: 0;
-    animation: fadeIn 1s ease-out forwards;
+    animation: fadeInLinks 1s ease-out forwards;
     animation-delay: 0.5s;
 }
 
-@keyframes fadeIn {
+@keyframes fadeInLinks {
     to {
         opacity: 1;
     }
@@ -81,6 +128,11 @@ nav {
 
 .nav-links a:hover {
     color: var(--pink);
+}
+
+.nav-links a.active {
+    color: var(--mint-green);
+    border-bottom: 2px solid var(--mint-green);
 }
 
 /* Mobile Menu Toggle */
@@ -110,7 +162,7 @@ nav {
         background-color: var(--white);
         flex-direction: column;
         width: 150px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         display: none;
     }
 
@@ -127,15 +179,21 @@ nav {
         display: flex;
     }
 
-    /* Animate the menu */
+    /* Mobile Menu Animation */
     .nav-links.active {
         display: flex;
         animation: fadeInMenu 0.5s ease-in-out forwards;
     }
 
     @keyframes fadeInMenu {
-        from { opacity: 0; transform: translateY(-10px); }
-        to { opacity: 1; transform: translateY(0); }
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
     /* Menu Toggle Animation */
@@ -152,13 +210,3 @@ nav {
     }
 }
 
-/* 3D Text Effect on Hover */
-.logo-text:hover {
-    transform: rotateY(10deg) scale(1.05);
-    color: var(--pink);
-}
-
-.nav-links a.active {
-    color: var(--mint-green);
-    border-bottom: 2px solid var(--mint-green);
-}
