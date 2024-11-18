@@ -1895,3 +1895,4 @@ STREAM b'sRGB' 41 1
 STREAM b'gAMA' 54 4
 STREAM b'pHYs' 70 9
 STREAM b'IDAT' 91 65445
+Not Found: /favicon.ico
