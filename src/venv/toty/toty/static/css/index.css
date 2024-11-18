@@ -289,18 +289,16 @@
     }
 }
 
-
 .hero {
-    background-size: cover;
+    background: linear-gradient(to bottom, #4caf50, #81c784); /* Gradient colors */
     position: relative; /* To position butterflies absolutely within */
     height: 100vh; /* Adjust as needed */
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden; /* Hide overflow from butterfly animations */
+    background-size: cover; /* Ensures the gradient covers the entire section */
 }
-
-/* static/css/styles.css */
 
 /* Common butterfly styles */
 .butterfly {
