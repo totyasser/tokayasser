@@ -24,14 +24,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Mobile Menu Toggle
-    const navContainer = document.querySelector('.nav-links');
-    const toggleButton = document.querySelector('.menu-toggle');
-
-    toggleButton.addEventListener('click', () => {
-        navContainer.classList.toggle('active'); // Show/hide navigation links
-        toggleButton.classList.toggle('toggle'); // Animate menu icon
+    document.getElementById('mobile-menu').addEventListener('click', function() {
+        const navLinks = document.querySelector('.nav-links');
+        const menuToggle = document.getElementById('mobile-menu');
+        navLinks.classList.toggle('active'); // Toggle the active class to show/hide the menu
+        menuToggle.classList.toggle('toggle'); // Toggle the bar rotation for menu button
     });
-
+    
     // Logo Name Toggle
     const logo = document.getElementById('logo');
     const logoName = document.getElementById('logo-name');
