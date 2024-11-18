@@ -1,0 +1,1587 @@
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py", line 4, in index
+    return render(request, 'index.html')
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py", line 4, in index
+    return render(request, 'pages/index.html')
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 573, in invalid_block_tag
+    raise self.error(
+    ...<3 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 12: 'static'. Did you forget to register or load this tag?
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py", line 4, in index
+    return render(request, 'pages/index.html')
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 573, in invalid_block_tag
+    raise self.error(
+    ...<3 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 12: 'static'. Did you forget to register or load this tag?
+Internal Server Error: /
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py", line 4, in index
+    return render(request, 'pages/index.html')
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 573, in invalid_block_tag
+    raise self.error(
+    ...<3 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 12: 'static'. Did you forget to register or load this tag?
+Internal Server Error: /
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py", line 4, in index
+    return render(request, 'pages/index.html')
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'home' not found. 'home' is not a valid view function or pattern name.
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\toty\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\toty\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\toty\settings.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\toty\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py", line 6, in home
+    return render(request, 'index.html')
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py", line 6, in home
+    return render(request, 'pages/index.html')
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 210, in render
+    return template.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'home' not found. 'home' is not a valid view function or pattern name.
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py", line 6, in home
+    return render(request, 'pages/index.html')
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 573, in invalid_block_tag
+    raise self.error(
+    ...<3 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 12: 'static'. Did you forget to register or load this tag?
+Internal Server Error: /
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py", line 6, in home
+    return render(request, 'pages/index.html')
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 573, in invalid_block_tag
+    raise self.error(
+    ...<3 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'static'. Did you forget to register or load this tag?
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py", line 6, in home
+    return render(request, 'pages/index.html')
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 573, in invalid_block_tag
+    raise self.error(
+    ...<3 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'static'. Did you forget to register or load this tag?
+Internal Server Error: /
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py", line 6, in home
+    return render(request, 'pages/index.html')
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 573, in invalid_block_tag
+    raise self.error(
+    ...<3 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'static'. Did you forget to register or load this tag?
+Internal Server Error: /
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 199, in render
+    template = context.template.engine.select_template(template_name)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\engine.py", line 214, in select_template
+    raise TemplateDoesNotExist(", ".join(not_found))
+django.template.exceptions.TemplateDoesNotExist: portfolio/header.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py", line 6, in home
+    return render(request, 'pages/index.html')
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: portfolio/header.html
+Internal Server Error: /
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py", line 6, in home
+    return render(request, 'pages/index.html')
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 210, in render
+    return template.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'index' not found. 'index' is not a valid view function or pattern name.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py", line 6, in home
+    return render(request, 'pages/index.html')
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 210, in render
+    return template.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'index' not found. 'index' is not a valid view function or pattern name.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py", line 6, in home
+    return render(request, 'pages/index.html')
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 523, in parse
+    self.unclosed_block_tag(parse_until)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 586, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 7: 'block'. Looking for one of: endblock.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py", line 6, in home
+    return render(request, 'pages/index.html')
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 210, in render
+    return template.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'index' not found. 'index' is not a valid view function or pattern name.
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py", line 6, in home
+    return render(request, 'pages/index.html', {'current_year': current_year})
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 563, in invalid_block_tag
+    raise self.error(
+    ...<8 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 27: 'static', expected 'endblock'. Did you forget to register or load this tag?
+Internal Server Error: /
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py", line 6, in home
+    return render(request, 'pages/index.html', {'current_year': current_year})
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 563, in invalid_block_tag
+    raise self.error(
+    ...<8 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 27: 'static', expected 'endblock'. Did you forget to register or load this tag?
+Internal Server Error: /
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py", line 6, in home
+    return render(request, 'pages/index.html', {'current_year': current_year})
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 563, in invalid_block_tag
+    raise self.error(
+    ...<8 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 27: 'static', expected 'endblock'. Did you forget to register or load this tag?
+Internal Server Error: /
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py", line 6, in home
+    return render(request, 'pages/index.html', {'current_year': current_year})
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 523, in parse
+    self.unclosed_block_tag(parse_until)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 586, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 7: 'block'. Looking for one of: endblock.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py", line 6, in home
+    return render(request, 'pages/index.html', {'current_year': current_year})
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 563, in invalid_block_tag
+    raise self.error(
+    ...<8 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 27: 'static', expected 'endblock'. Did you forget to register or load this tag?
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\toty\settings.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\toty\settings.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\urls.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /contact/
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py", line 41, in contact_view
+    return render(request, 'contact.html', {'form': form})
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: contact.html
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py", line 31, in home
+    return render(request, 'index.html')
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\toty\settings.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\toty\settings.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\toty\settings.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\toty\settings.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\toty\settings.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py", line 41, in home
+    return render(request, 'pages/index.html')
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 199, in render
+    template = context.template.engine.select_template(template_name)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\engine.py", line 208, in select_template
+    return self.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 573, in invalid_block_tag
+    raise self.error(
+    ...<3 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 4: 'static'. Did you forget to register or load this tag?
+Internal Server Error: /
+Traceback (most recent call last):
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\toty\pages\views.py", line 41, in home
+    return render(request, 'pages/index.html')
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\loader_tags.py", line 210, in render
+    return template.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\WX_CAREER\COTS\TOTY_WS\src\venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'landing-page' not found. 'landing-page' is not a valid view function or pattern name.

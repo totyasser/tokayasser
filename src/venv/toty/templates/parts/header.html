@@ -1,0 +1,23 @@
+{% load static %}
+
+<header class="header-custom">
+    <nav>
+        {% comment %} <a class="navbar-brand" href="{% url 'home' %}" id="logo">
+            <img src="{% static 'images/logo.png' %}" alt="Logo" width="120" height="120" style="border-radius: 17px;">
+        </a> {% endcomment %}
+        <div class="logo hidden" id="logo-name">
+            <a href="{% url 'home' %}" class="logo-text">Toka Yasser</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- Mobile Menu Toggle -->
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</header>

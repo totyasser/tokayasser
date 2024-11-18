@@ -1,0 +1,164 @@
+/* Header Styles */
+header {
+    background-color: var(--white);
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    animation: slideDown 0.5s ease-out forwards;
+    transform: translateY(-100%);
+}
+
+@keyframes slideDown {
+    to {
+        transform: translateY(0);
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+}
+
+/* Logo with 3D Effect and Animation */
+.logo-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--blue);
+    text-decoration: none;
+    display: inline-block;
+    perspective: 500px;
+    animation: popIn 1s ease-out forwards;
+    opacity: 0;
+    transform: translateZ(-50px) rotateY(-10deg);
+    transition: transform 0.6s ease, color 0.3s ease;
+    /* 3D Text Shadow for Subtle Depth */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes popIn {
+    to {
+        opacity: 1;
+        transform: translateZ(0) rotateY(0);
+    }
+}
+
+.logo-text:hover {
+    transform: rotateY(10deg) scale(1.05);
+    color: var(--pink);
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--pink);
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    justify-content: space-between;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 100%;
+    background-color: var(--blue);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        right: 20px;
+        top: 70px;
+        background-color: var(--white);
+        flex-direction: column;
+        width: 150px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        display: none;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .nav-links a {
+        color: var(--blue);
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    /* Animate the menu */
+    .nav-links.active {
+        display: flex;
+        animation: fadeInMenu 0.5s ease-in-out forwards;
+    }
+
+    @keyframes fadeInMenu {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Menu Toggle Animation */
+    .menu-toggle.toggle .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .menu-toggle.toggle .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.toggle .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
+/* 3D Text Effect on Hover */
+.logo-text:hover {
+    transform: rotateY(10deg) scale(1.05);
+    color: var(--pink);
+}
+
+.nav-links a.active {
+    color: var(--mint-green);
+    border-bottom: 2px solid var(--mint-green);
+}
