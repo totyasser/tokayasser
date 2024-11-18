@@ -4,36 +4,44 @@
 
 /* About Section */
 .about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 55vh; /* Full viewport height */
-    text-align: center; /* Center align text */
-    background-color: var(--white); /* Optional: Add a background color */
+    position: relative;
+    padding: 80px 20px; /* Spacing for the section */
+    background: linear-gradient(135deg, #f0f8ff, #d1e8ff); /* Light 3D-like gradient */
+    color: #333; /* Text color */
+    overflow: hidden; /* Ensures pseudo-elements don't overflow */
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1); /* Soft inset shadow */
+    border-radius: 20px; /* Rounded corners for the section */
+}
+
+.about::before,
+.about::after {
+    content: "“"; /* Double quotation marks */
+    position: absolute;
+    font-size: 200px; /* Large quotation mark size */
+    color: rgba(0, 0, 0, 0.05); /* Light gray, for a subtle effect */
+    font-weight: bold;
+    z-index: 0; /* Behind content */
+    transform: rotate(-10deg); /* Slight rotation for style */
+    pointer-events: none; /* Ensure it doesn’t interfere with user interactions */
+}
+
+.about::before {
+    top: -20px;
+    left: 20px;
+}
+
+.about::after {
+    bottom: -20px;
+    right: 20px;
+    content: "”"; /* Closing double quotation mark */
 }
 
 .about .container {
-    max-width: 1200px; /* Restrict content width */
-    padding: 0 20px; /* Add padding for small screens */
-}
-
-.about-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center align content */
-    gap: 20px; /* Add spacing between text and image */
-}
-
-.about-text {
-    max-width: 600px; /* Limit the width of the text for better readability */
-    font-size: 1.2rem; /* Adjust font size */
-    color: #555; /* Subtle text color */
-}
-
-/* About Section */
-#about {
-    padding: 60px 20px;
-    color: #fff; /* Ensure text contrasts with the background */
+    position: relative;
+    z-index: 1; /* Brings content above pseudo-elements */
+    max-width: 1200px;
+    margin: auto;
+    text-align: center; /* Center-align the text */
 }
 
 .about-content {
@@ -41,37 +49,49 @@
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.about-text {
+    flex: 1;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333; /* Subtle text color */
 }
 
 .about-image {
     position: relative;
-    width: 100%;
+    flex: 1;
     max-width: 400px;
-    height: 400px;
     margin: auto;
-    background: linear-gradient(to bottom, #f0f8ff, #add8e6); /* Replace with image dominant color */
-    border-radius: 10px; /* Optional: rounded corners */
-    overflow: hidden; /* Ensures the image fits within the shape */
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Soft drop shadow */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-image:hover {
+    transform: scale(1.05); /* Slightly enlarges on hover */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3); /* Intensified shadow on hover */
 }
 
 .about-image img {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the image covers the div */
-    mix-blend-mode: multiply; /* Blends the image with the background */
-    opacity: 0.9; /* Optional: Slight transparency for blending */
+    height: auto;
+    display: block;
+    object-fit: cover; /* Ensures the image fills the container */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .about {
-        height: auto; /* Allow content to grow for smaller screens */
-        padding: 50px 0; /* Add vertical padding */
+    .about-content {
+        flex-direction: column; /* Stacks text and image */
     }
 
-    .about-content {
-        flex-direction: column; /* Stack text and image */
+    .about::before,
+    .about::after {
+        font-size: 150px; /* Adjusts size of quotation marks for smaller screens */
     }
 }
 
