@@ -7,7 +7,7 @@
     <!-- Hero Section -->
     <section class="hero" data-aos="fade-in">
         <div class="hero-content animate__animated animate__fadeIn">
-            <h1>Welcome to My Portfolio</h1>
+            <h1>Toka Yasser's Portfolio</h1>
             <p>Experienced English Teacher & Instructor</p>
             <a href="#about" class="btn">Learn More</a>
         </div>
@@ -27,10 +27,11 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        I am Toka Yasser, an English teacher with over X years of experience in teaching and curriculum development.
-                        My passion lies in helping students achieve their language goals through innovative teaching methods and personalized learning plans.
-    
-                        And Mohamed Hates Me.
+                        A dedicated and passionate English teacher with two years of experience, I have a proven track record of
+                        effectively teaching English language and literature. My skills include creating engaging lesson plans, fostering a
+                        positive learning environment, and utilizing innovative teaching methods to enhance student understanding and
+                        performance. I excel in communication, classroom management, and adapting lessons to meet diverse student
+                        needs, ensuring every learner achieves their full potential.
                     </p>
                 </div>
                 <div class="about-image">
@@ -40,7 +41,8 @@
         </div>
     </section>
 
-    <!-- Portfolio Section -->
+<!-- Portfolio Section -->
+{% if portfolios %}
     <section id="portfolio" class="portfolio" data-aos="fade-up" data-aos-delay="250">
         <div class="container">
             <h2>My Work</h2>
@@ -66,6 +68,8 @@
             </div>
         </div>
     </section>
+{% endif %}
+
 
     <!-- Education Section -->
     <section id="education" class="education" data-aos="fade-up" data-aos-delay="150">
